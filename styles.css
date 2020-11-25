@@ -39,7 +39,9 @@
     align-items: center;
     justify-content: space-between;
     /*background-color: rgba(0,0,0,0.4);*/
-    height: 70%;
+    min-height: 70%;
+    margin-right: 2rem;
+    height: auto;
 }
 .purple-container{
     background-color: hsl(248, 32%, 49%);
@@ -47,6 +49,7 @@
     text-align: center;
     color: white;
     padding: 1.5rem;
+    margin-bottom: 1.5rem;
     border-radius: 15px;
     box-shadow: 0px 8px 0px rgba(0,0,0,0.2);
 }
@@ -55,7 +58,8 @@
     min-width: 35vw;
     border-radius: 1rem;
     box-shadow: 0px 8px 0px rgba(0,0,0,0.2);
-    height: 80%;
+    min-height: 80%;
+    height: auto;
     padding: 1rem;
     display: flex;
     flex-direction: column;
