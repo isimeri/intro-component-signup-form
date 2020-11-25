@@ -205,6 +205,10 @@
 }
 @media(max-width : 375px)
 {
+    .supreme-container{
+        background-image: url("./images/bg-intro-mobile.png");
+        background-position: center;
+    }
     .big-header{
         font-size: 1.8rem;
     }
