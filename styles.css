@@ -1,3 +1,135 @@
 *{
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
+}
+.supreme-container{
+    height: 100vh;
+    width: 100%;
+    background-color: hsl(0, 100%, 74%);
+    background-image: url(./images/bg-intro-desktop.png);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.description-container{
+    width: 40%;
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+.big-header{
+    width: 65%;
+    font-size: 3rem;
+    margin: 0 auto 1.5rem auto;
+}
+.description-container > p{
+    margin: 0 auto;
+    width: 65%;
+    font-size: 16px;
+}
+.big-form-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    /*background-color: rgba(0,0,0,0.4);*/
+    height: 70%;
+}
+.purple-container{
+    background-color: hsl(248, 32%, 49%);
+    width: 100%;
+    text-align: center;
+    color: white;
+    padding: 1.5rem;
+    border-radius: 15px;
+    box-shadow: 0px 8px 0px rgba(0,0,0,0.2);
+}
+.form-container{
+    background-color: white;
+    min-width: 35vw;
+    border-radius: 1rem;
+    box-shadow: 0px 8px 0px rgba(0,0,0,0.2);
+    height: 80%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.sign-up-form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.sign-up-form > input{
+    padding: 1rem;
+    margin: 0.7rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+.sign-up-form > input:hover{
+    border: 1px solid hsl(0, 100%, 74%);
+}
+
+.sign-up-form > input:hover::placeholder{
+    color: hsl(0, 100%, 74%);
+    opacity: 0.8;
+}
+.sign-up-form > input:focus::placeholder{
+    color: black;
+    opacity: 0.8;
+}
+.sign-up-form > input:focus{
+    border: 1px solid black;
+    font-weight: 700;
+    color: black;
+}
+
+.sign-up-button{
+    padding: 1rem;
+    margin: 0.7rem 1rem;
+    border: none;
+    border-radius: 5px;
+    background: hsl(154, 59%, 51%);
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+.sign-up-button:hover{
+    background: hsl(154, 59%, 71%);
+    cursor: pointer;
+}
+.terms-and-services-text{
+    color: hsl(246, 25%, 77%);
+    font-size: 12px;
+    margin-bottom: 2rem;
+}
+.terms-and-services-span{
+    color: hsl(0, 100%, 74%);
+    transition: all 0.3s ease;
+}
+.terms-and-services-span:hover{
+    color: hsl(0, 100%, 84%);
+    cursor: pointer;
+}
+.sign-up-form > input.error{
+    margin-bottom: 1rem;
+}
+.error-msg{
+    color: hsl(0, 100%, 74%);
+    font-size: 12px;
+    font-style: italic;
+    text-align: end;
+    margin: 0 1rem;
+    display: none;
+    position: relative;
+    bottom: 0.8rem;
+}
+.error-msg.show{
+    display: block;
 }
