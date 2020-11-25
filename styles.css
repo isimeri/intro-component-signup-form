@@ -61,28 +61,38 @@
     display: flex;
     flex-direction: column;
 }
-.sign-up-form > input{
+.input-wrapper{
+    position: relative;
+}
+.input-wrapper.goodnt::after{
+    content: url("./images/icon-error.svg");
+    position: absolute;
+    top: 1.6rem;
+    right: 2rem;
+}
+.sign-up-form input{
+    width: 95%;
     padding: 1rem;
     margin: 0.7rem 1rem;
     border: 1px solid #ccc;
     border-radius: 5px;
     font-family: "Poppins", sans-serif;
     font-weight: 600;
-    transition: all 0.3s ease;
+    transition: all 0.1s ease;
 }
-.sign-up-form > input:hover{
+.sign-up-form input:hover{
     border: 1px solid hsl(0, 100%, 74%);
 }
 
-.sign-up-form > input:hover::placeholder{
+.sign-up-form input:hover::placeholder{
     color: hsl(0, 100%, 74%);
     opacity: 0.8;
 }
-.sign-up-form > input:focus::placeholder{
+.sign-up-form input:focus::placeholder{
     color: black;
     opacity: 0.8;
 }
-.sign-up-form > input:focus{
+.sign-up-form input:focus{
     border: 1px solid black;
     font-weight: 700;
     color: black;
